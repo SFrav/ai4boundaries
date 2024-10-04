@@ -20,7 +20,9 @@ pip install git+https://github.com/waldnerf/ai4boundaries
 from ai4boundaries import download_ai4boundaries
 
 dir = '/path/to/ai4boundaries_data'
-download_ai4boundaries(dir)
+# Sensor type: 'All', 'ortho', 's2'. N.B.: 1m orthophotos are splashed with the year and other text.
+# Country code: 'All', 'AT', 'ES', 'FR', 'LU', 'NL', 'SE', 'SI'
+download_ai4boundaries(dir, s2, All)
 
 
 ```
